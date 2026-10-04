@@ -7,6 +7,7 @@
 <style>
 @layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}
 ::-webkit-scrollbar{display:none;}
+html{scroll-behavior:smooth;}[id]{scroll-margin-top:5.5rem;}
 #mob{display:block;min-height:max(884px,100dvh);--c-primary:26 40 78;--c-primary-container:27 42 74;--c-on-primary:255 255 255;--c-on-primary-container:217 226 255;--c-secondary:201 136 24;--c-secondary-container:229 169 60;--c-on-secondary:255 255 255;--c-on-secondary-container:112 75 0;--c-tertiary:40 16 0;--c-tertiary-container:69 34 3;--c-on-tertiary:255 255 255;--c-background:251 249 243;--c-on-background:27 28 24;--c-surface:251 249 243;--c-on-surface:27 28 24;--c-surface-variant:228 226 221;--c-on-surface-variant:69 70 78;--c-surface-container-lowest:255 255 255;--c-surface-container-low:246 243 235;--c-surface-container:240 238 232;--c-surface-container-high:234 232 226;--c-surface-container-highest:232 229 222;--c-outline:117 119 127;--c-outline-variant:213 211 203;--c-on-primary-fixed-variant:56 70 104;--c-secondary-fixed-dim:255 186 69;--c-surface-tint:79 94 129;--c-tertiary-fixed-dim:246 186 142;--c-surface-bright:251 249 243;--c-on-tertiary-fixed-variant:102 61 27;--c-inverse-surface:27 35 58;--c-on-tertiary-container:189 135 95;--c-on-tertiary-fixed:48 20 0;--c-secondary-fixed:255 221 176;--c-error:186 26 26;--c-on-primary-fixed:10 26 58;--c-primary-fixed-dim:183 198 238;--c-surface-dim:220 218 212;--c-primary-fixed:217 226 255;--c-tertiary-fixed:255 220 196;--c-on-secondary-fixed-variant:97 64 0;--c-error-container:255 218 214;--c-on-error:255 255 255;--c-inverse-on-surface:243 241 235;--c-inverse-primary:183 198 238;--c-on-error-container:147 0 10;--c-on-secondary-fixed:40 24 0;--ff-label-sm:"Source Sans 3", sans-serif;--ff-title-md:Domine, serif;--ff-headline-sm:Domine, serif;--ff-headline-lg:Domine, serif;--ff-body-md:"Source Sans 3", sans-serif;--ff-headline-md:Domine, serif;--ff-headline-lg-mobile:Domine, serif;--ff-body-lg:"Source Sans 3", sans-serif;--ff-body-sm:"Source Sans 3", sans-serif;--ff-label-lg:"Source Sans 3", sans-serif;--ff-headline-xl:Domine, serif;--ff-label-md:"Source Sans 3", sans-serif;--ff-headline-xl-mobile:Domine, serif;--fs-label-sm:11px;--lh-label-sm:14px;--ls-label-sm:0.08em;--fw-label-sm:700;--fs-title-md:18px;--lh-title-md:26px;--fw-title-md:500;--fs-headline-sm:20px;--lh-headline-sm:28px;--fw-headline-sm:600;--fs-headline-lg:32px;--lh-headline-lg:40px;--ls-headline-lg:-0.01em;--fw-headline-lg:700;--fs-body-md:15px;--lh-body-md:22px;--fw-body-md:400;--fs-headline-md:24px;--lh-headline-md:32px;--fw-headline-md:600;--fs-headline-lg-mobile:26px;--lh-headline-lg-mobile:32px;--fw-headline-lg-mobile:700;--fs-body-lg:17px;--lh-body-lg:26px;--fw-body-lg:400;--fs-body-sm:13px;--lh-body-sm:18px;--fw-body-sm:400;--fs-label-lg:14px;--lh-label-lg:20px;--ls-label-lg:0.04em;--fw-label-lg:600;--fs-headline-xl:40px;--lh-headline-xl:48px;--ls-headline-xl:-0.02em;--fw-headline-xl:700;--fs-label-md:12px;--lh-label-md:16px;--ls-label-md:0.06em;--fw-label-md:600;--fs-headline-xl-mobile:30px;--lh-headline-xl-mobile:38px;--ls-headline-xl-mobile:-0.01em;--fw-headline-xl-mobile:700}
 #desk{display:none;--c-primary:21 34 63;--c-primary-container:26 40 78;--c-on-primary:255 255 255;--c-on-primary-container:217 226 255;--c-secondary:217 153 40;--c-secondary-container:255 221 176;--c-on-secondary:255 255 255;--c-on-secondary-container:74 50 0;--c-tertiary:201 136 24;--c-tertiary-container:250 238 216;--c-on-tertiary:255 255 255;--c-background:252 251 250;--c-on-background:25 28 32;--c-surface:252 251 250;--c-on-surface:25 28 32;--c-surface-variant:238 235 227;--c-on-surface-variant:77 83 96;--c-surface-container-lowest:255 255 255;--c-surface-container-low:246 244 237;--c-surface-container:238 235 226;--c-surface-container-high:230 227 218;--c-surface-container-highest:222 218 208;--c-outline:122 125 134;--c-outline-variant:208 205 212;--ff-label-sm:"Plus Jakarta Sans";--ff-title-md:"Plus Jakarta Sans";--ff-headline-sm:Domine;--ff-headline-lg:Domine;--ff-display-lg-mobile:Domine;--ff-body-md:"Plus Jakarta Sans";--ff-headline-md:Domine;--ff-headline-lg-mobile:Domine;--ff-body-lg:"Plus Jakarta Sans";--ff-body-sm:"Plus Jakarta Sans";--ff-label-lg:"Plus Jakarta Sans";--ff-display-lg:Domine;--fs-label-sm:11px;--lh-label-sm:16px;--ls-label-sm:0.06em;--fw-label-sm:700;--fs-title-md:18px;--lh-title-md:26px;--fw-title-md:600;--fs-headline-sm:20px;--lh-headline-sm:28px;--fw-headline-sm:600;--fs-headline-lg:32px;--lh-headline-lg:40px;--ls-headline-lg:-0.01em;--fw-headline-lg:600;--fs-display-lg-mobile:36px;--lh-display-lg-mobile:44px;--ls-display-lg-mobile:-0.01em;--fw-display-lg-mobile:700;--fs-body-md:15px;--lh-body-md:22px;--fw-body-md:400;--fs-headline-md:24px;--lh-headline-md:32px;--fw-headline-md:600;--fs-headline-lg-mobile:26px;--lh-headline-lg-mobile:34px;--fw-headline-lg-mobile:600;--fs-body-lg:17px;--lh-body-lg:26px;--fw-body-lg:400;--fs-body-sm:13px;--lh-body-sm:18px;--fw-body-sm:400;--fs-label-lg:14px;--lh-label-lg:20px;--ls-label-lg:0.02em;--fw-label-lg:600;--fs-display-lg:48px;--lh-display-lg:56px;--ls-display-lg:-0.02em;--fw-display-lg:700}
 @media (min-width:768px){#desk{display:block}#mob{display:none}}
@@ -244,11 +245,11 @@
  }
 }}};</script>
 </head><body>
-<div id="mob" class="bg-surface text-on-surface font-body-md text-body-md flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/90 backdrop-blur-xl border-b border-outline-variant/40 shadow-[0_1px_8px_rgba(26,40,78,0.06)]"><div class="h-20 px-margin-mobile flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm min-w-0"><div class="w-14 h-10 rounded-md border border-secondary/50 overflow-hidden shrink-0 shadow-sm bg-primary flex items-center justify-center p-0.5"><img alt="El Portal Comida Casera" class="w-full h-full object-contain rounded" src="https://lh3.googleusercontent.com/aida/AEtjO1UOWQdBu0nMTziKYf9m_VTLNCOVcgdP9jLQ3ixqLSclWQpb6PJ5IYIcysyABMSNKpZDEgFgRc6eLMMlRCHvNtbc7Pk_Si7ADvZisg7z9aor5Wubbdj3s0GkMsmUV3NnYRTmGoowTGbPnY-gDWKQpBa4tEdufQiUFnjoIa5Jt84jLJbuw257emk9U_3t9d-tJKzYSxFQWBxWZosYir0vjnQIiuUnIgaBj56E8KedVuBoZ_9YGyXOQYrZUg"/></div><div class="flex flex-col min-w-0"><div class="flex items-baseline gap-space-xs"><span class="font-headline-sm text-headline-sm text-primary font-semibold tracking-tight truncate">El Portal</span><span class="font-label-sm text-label-sm text-secondary font-medium truncate italic hidden xs:inline">¡El hogar del sazón!</span></div><span class="font-label-sm text-label-sm text-on-surface-variant inline-flex items-center gap-0.5 truncate"><span class="text-secondary font-bold">★</span> 4.6 (136 reseñas en Google)</span></div></div><div class="flex items-center gap-space-sm shrink-0"><a class="min-h-[40px] px-space-sm py-1 bg-primary text-on-primary rounded-lg font-label-sm text-label-sm flex items-center gap-1 hover:bg-primary-container hover:text-white transition-colors shadow-sm" href="https://wa.me/526672433244?text=Hola%20El%20Portal,%20me%20gustar%C3%ADa%20hacer%20un%20pedido" target="_blank"><span class="material-symbols-outlined text-[18px] text-secondary">chat</span><span class="hidden sm:inline whitespace-nowrap">Pedir WhatsApp</span></a><a class="w-8 h-8 rounded-full bg-surface-container-high text-primary flex items-center justify-center shrink-0 border border-outline-variant/60 hover:bg-secondary/15 transition-colors" href="tel:6672433244" title="Llamar 667 243 3244"><span class="material-symbols-outlined text-[18px]">call</span></a></div></div></header><main class="flex flex-col relative w-full pt-20 pb-24 bg-surface"><div class="flex flex-col w-full">
+<div id="mob" class="bg-surface text-on-surface font-body-md text-body-md flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/90 backdrop-blur-xl border-b border-outline-variant/40 shadow-[0_1px_8px_rgba(26,40,78,0.06)]"><div class="h-20 px-margin-mobile flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm min-w-0"><div class="w-14 h-10 rounded-md border border-secondary/50 overflow-hidden shrink-0 shadow-sm bg-primary flex items-center justify-center p-0.5"><img alt="Logotipo de El Portal Comida Casera" class="w-full h-full object-contain rounded" src="assets/img/img-01.jpg"/></div><div class="flex flex-col min-w-0"><div class="flex items-baseline gap-space-xs"><span class="font-headline-sm text-headline-sm text-primary font-semibold tracking-tight truncate">El Portal</span><span class="font-label-sm text-label-sm text-secondary font-medium truncate italic hidden xs:inline">¡El hogar del sazón!</span></div><span class="font-label-sm text-label-sm text-on-surface-variant inline-flex items-center gap-0.5 truncate"><span class="text-secondary font-bold">★</span> 4.6 (136 reseñas en Google)</span></div></div><div class="flex items-center gap-space-sm shrink-0"><a class="min-h-[40px] px-space-sm py-1 bg-primary text-on-primary rounded-lg font-label-sm text-label-sm flex items-center gap-1 hover:bg-primary-container hover:text-white transition-colors shadow-sm" href="https://wa.me/526672433244?text=Hola%20El%20Portal,%20me%20gustar%C3%ADa%20hacer%20un%20pedido" target="_blank"><span class="material-symbols-outlined text-[18px] text-secondary">chat</span><span class="hidden sm:inline whitespace-nowrap">Pedir WhatsApp</span></a><a class="w-8 h-8 rounded-full bg-surface-container-high text-primary flex items-center justify-center shrink-0 border border-outline-variant/60 hover:bg-secondary/15 transition-colors" href="tel:+526672433244" title="Llamar 667 243 3244"><span class="material-symbols-outlined text-[18px]">call</span></a></div></div></header><main class="flex flex-col relative w-full pt-20 pb-24 bg-surface"><div class="flex flex-col w-full">
 <!-- Hero & Authentic Atmosphere -->
 <section class="relative px-margin-mobile pt-space-md pb-space-lg flex flex-col gap-space-md">
 <div class="relative w-full rounded-xl overflow-hidden shadow-lg bg-surface-container-high border border-outline-variant/40">
-<div class="w-full h-64 bg-cover bg-center relative flex flex-col justify-end p-space-md" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCBTC5Q9Wcl2p_m0qiH4OMeEZt8m8v943kw7E3X31Hq04dRRBwDsbdYgc_lcmxU2mPPbybV3V-zp7OY0Dq7sSp6FP_ikw9MhoBBM0l40z3S-Fu5Dvm3WanNS678GZWbASLHsGSrbcNRUGJxADShjKzxwGw6RGwjy8FLlLv9dJ4iRAMhSD6OG9gclPXChoC79evhLe34_j2L4e1NsjWinodS5f3CCj-Z99XqSPDsoX2FhQIjOwX9YkESnfqlGDnBnExsGw')">
+<div class="w-full h-64 bg-cover bg-center relative flex flex-col justify-end p-space-md" style="background-image: url('assets/img/img-02.jpg')">
 <div class="absolute inset-0 bg-gradient-to-t from-primary/95 via-primary/55 to-transparent"></div>
 <div class="relative z-10 flex flex-col gap-space-xs">
 <div class="inline-flex items-center gap-1.5 self-start px-space-sm py-0.5 rounded-full bg-surface-container-lowest/95 backdrop-blur-sm shadow-sm border border-secondary/40">
@@ -279,7 +280,7 @@
 <span class="material-symbols-outlined text-[20px] text-secondary">chat</span>
 <span class="truncate font-semibold">WhatsApp: 667 243 3244</span>
 </a>
-<a class="w-full py-3 px-space-sm bg-surface-container-lowest text-primary border-2 border-primary/20 rounded-lg font-label-lg text-label-lg flex items-center justify-center gap-2 shadow-sm hover:border-secondary hover:bg-surface-container-high active:scale-[0.98] transition-all text-center" href="tel:6672433244"><span class="material-symbols-outlined text-[20px] text-secondary">call</span><span class="truncate font-semibold">Ordene y Recoja: 667 243 3244</span></a>
+<a class="w-full py-3 px-space-sm bg-surface-container-lowest text-primary border-2 border-primary/20 rounded-lg font-label-lg text-label-lg flex items-center justify-center gap-2 shadow-sm hover:border-secondary hover:bg-surface-container-high active:scale-[0.98] transition-all text-center" href="tel:+526672433244"><span class="material-symbols-outlined text-[20px] text-secondary">call</span><span class="truncate font-semibold">Ordene y Recoja: 667 243 3244</span></a>
 </div>
 </div>
 <!-- Heritage Slogan Note -->
@@ -305,7 +306,7 @@
 <div class="flex flex-col gap-space-md">
 <!-- Card 1: Guisado de Casa (IMAGE_11) -->
 <div class="rounded-xl overflow-hidden bg-surface-container-lowest shadow-sm flex flex-col border border-outline-variant/40">
-<div class="w-full h-48 bg-cover bg-center relative" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCUEjBUBeYFuUVlJ3EXU6AN9fdufU57bbiOuQF5Hjf9X-CU_vmF4THV-iTr-euzloSyb577nbaoEMMwTocBdPgSpi_l8fV4M3DDCQhiAjhFnbHKuL6nEh88HedHCJmlaPq2DqOZmzya0hFAtJgs91QthGPteYM5jPWCzt__Yd3GHgmPcbDcskK8IzPjo4Pijdx-H6xKa5FlB96FrkC9t7T_h7GC6WI_rhsAe1fOz-_ejr2JgBNZEixq6rXW3cr6fe6uCg')">
+<div class="w-full h-48 bg-cover bg-center relative" style="background-image: url('assets/img/img-02.jpg')">
 <div class="absolute top-space-sm right-space-sm bg-surface-container-lowest/95 backdrop-blur-md px-space-sm py-1 rounded-full shadow-sm border border-secondary/40">
 <span class="font-label-sm text-label-sm text-primary font-bold">Platillo Completo</span>
 </div>
@@ -319,7 +320,7 @@
 </div>
 <!-- Card 2: Cazuelas y Guisados en Barra (IMAGE_2) -->
 <div class="rounded-xl overflow-hidden bg-surface-container-lowest shadow-sm flex flex-col border border-outline-variant/40">
-<div class="w-full h-48 bg-cover bg-center relative" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCsYYwhU9B7jT8hJL-9u25Jy1CHIQhtMznf2ntE_J2NCoBOz7R7XJ6lx9ftJ8Mbb4CiKogBWnDQMw_TqPVnezpVWysHAqGlxaZSavn1Ko4zC-LT3RFJAW5ouaOtF3vOPrCn1BoOi5PO6vADCQ5fkRfqG2g0DguDqn9GnrvfimwE9S8Roer7gX1etCVOW8mqR8HRYe7Aj6cKJEEFwhvs2a5a5_zZiByEwuV50wuNVrHpbIAU-lQltizBkVYlV_eQhbfd9w')">
+<div class="w-full h-48 bg-cover bg-center relative" style="background-image: url('assets/img/img-03.jpg')">
 <div class="absolute top-space-sm right-space-sm bg-surface-container-lowest/95 backdrop-blur-md px-space-sm py-1 rounded-full shadow-sm border border-secondary/40">
 <span class="font-label-sm text-label-sm text-secondary font-bold">Barra Caliente</span>
 </div>
@@ -333,7 +334,7 @@
 </div>
 <!-- Card 3: Gorditas y Antojitos (IMAGE_5) -->
 <div class="rounded-xl overflow-hidden bg-surface-container-lowest shadow-sm flex flex-col border border-outline-variant/40">
-<div class="w-full h-48 bg-cover bg-center relative" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBTnPZxL2TYSeiG8TRpHyXqsPpmxWfz2bjUcoIX-AKBzkiiOjzLBjT2AcRCLYMvi_omqe3xSOnKuokbVJcGSbiZUDNdRiyg5D_cGynfj09LmnoWMfNJ7loV5RFIneNzz6QuLULD124iSH86bICj9VIpJO6jl6-R9iw-v8sW4lmm1Szfin3jEhMZvW3AGboyZwI7ss7KALQmyIDR08H4bzuPZx1ZnhyXw1umUepVV8Eu2LR-Oxh6-wDwdRf5Rj0FcwUuEA')">
+<div class="w-full h-48 bg-cover bg-center relative" style="background-image: url('assets/img/img-04.jpg')">
 <div class="absolute top-space-sm right-space-sm bg-surface-container-lowest/95 backdrop-blur-md px-space-sm py-1 rounded-full shadow-sm border border-secondary/40">
 <span class="font-label-sm text-label-sm text-secondary font-bold">Hecho a Mano</span>
 </div>
@@ -347,7 +348,7 @@
 </div>
 <!-- Card 4: Plátanos Fritos Caseros (IMAGE_6) -->
 <div class="rounded-xl overflow-hidden bg-surface-container-lowest shadow-sm flex flex-col border border-outline-variant/40">
-<div class="w-full h-48 bg-cover bg-center relative" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBXErSROF-h0ng8NFZewPuAmgCjchI42tZXCICBWMg9E50sGI9NNaBr9jxhovwdT8ELcso9haP6R5Rortk_Rr3mmIhrFdifolX1qHrHT5mHFRbkvAPJBY6sYBcrXS3RKw3froRNKUyQZLTJprbA1gtSGsKNE2MXCbWu7hpa73CJOEWsJuAQTzEnHoyvv5k9peRck1-FQcdY6Ls3b1TN5tfLoY-mI9Kg_Q-g5mOY9fEtCSPUGWqDK9YQx7pkPqj0x2x4ug')">
+<div class="w-full h-48 bg-cover bg-center relative" style="background-image: url('assets/img/img-05.jpg')">
 <div class="absolute top-space-sm right-space-sm bg-surface-container-lowest/95 backdrop-blur-md px-space-sm py-1 rounded-full shadow-sm border border-secondary/40">
 <span class="font-label-sm text-label-sm text-secondary font-bold">Tradición Dulce</span>
 </div>
@@ -361,7 +362,7 @@
 </div>
 <!-- Card 5: Desayuno con Huevos al Gusto (IMAGE_9) -->
 <div class="rounded-xl overflow-hidden bg-surface-container-lowest shadow-sm flex flex-col border border-outline-variant/40">
-<div class="w-full h-48 bg-cover bg-center relative" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBCWKNiABZeBspjwhnEWrYPwlKZs61-xJDkihsZBoKq-u_P1V97JwfPpthPwW1iTaXhUFtofTh9EL-sHQaj8yduY7mEYjgalbZ9Pvaf91mHQv0H3Hy3vrspLKb0wjqwzOEp3KJVTW-e6brjWtIUPCuSESSFT14DrYJvR3qnSn9upufi-8fC-Ssi2UcB7EjxCWCjnIGzONRFH-oHXIdyaXRNbScTXN6Dlk7ML9I19RsQRSy_wK9InAx6MpmjjmD16nbXWg')">
+<div class="w-full h-48 bg-cover bg-center relative" style="background-image: url('assets/img/img-06.jpg')">
 <div class="absolute top-space-sm right-space-sm bg-surface-container-lowest/95 backdrop-blur-md px-space-sm py-1 rounded-full shadow-sm border border-secondary/40">
 <span class="font-label-sm text-label-sm text-primary font-bold">Desayuno Campirano</span>
 </div>
@@ -376,7 +377,7 @@
 </div>
 </section>
 <!-- Menú Auténtico "Todos los Días" y "Guisados por Día" (Cartel Real IMAGE_3) -->
-<section class="px-margin-mobile py-space-md flex flex-col gap-space-md">
+<section id="m-menu" class="px-margin-mobile py-space-md flex flex-col gap-space-md">
 <div class="p-space-md rounded-xl bg-surface-container-low border border-outline-variant/50 shadow-sm flex flex-col gap-space-md">
 <div class="flex items-center justify-between pb-2 border-b border-outline-variant/40">
 <div class="flex flex-col">
@@ -388,18 +389,18 @@
 <!-- Cartel original badge -->
 <div class="flex items-center gap-3 p-2.5 rounded-lg bg-surface-container-lowest border border-outline-variant/40 shadow-xs">
 <div class="w-14 h-10 rounded overflow-hidden shrink-0 shadow-sm border border-outline-variant/30">
-<img alt="Menú El Portal Cartel Oficial" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDZlfEIrqiNf2i1_F5brn4pY4v3Oucc3nw66F3zg5mhj--bgzrJF-iR8AY8Ti7Hd7uzkC2_YsrB143CtRXFWTmglz-HRSpxrE3DjVqlKoZo6EBtcohMmi2jLsW_W63EwR8n1SXytf_SvPKRPR3ZuHKYEz0_fhW0PSwA0vY0SW0e1r-qjsQkiv0FdXdyWyApytQFMbJioCiQaErENWdfJjRiNXWzCE9eT4cESLnEaGdwEwaLmHbwgAWmbTy8QUKg1aqb6g"/>
+<img alt="Cartel del menú de El Portal con los guisados y platillos de la casa" class="w-full h-full object-cover" src="assets/img/img-07.jpg"/>
 </div>
 <div class="flex flex-col min-w-0">
 <span class="font-label-lg text-label-lg text-primary font-bold truncate">Carta Oficial del Restaurante</span>
-<span class="font-label-sm text-label-sm text-on-surface-variant">Sabor 100% casero en Aguaruto</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Comida casera en Aguaruto</span>
 </div>
 </div>
 <!-- Sección: Todos los Días -->
 <div class="flex flex-col gap-2">
 <div class="flex items-center gap-1.5 text-primary font-headline-sm text-title-md font-bold">
 <span class="material-symbols-outlined text-[20px] text-secondary">calendar_today</span>
-<span class="">* Todos los Días</span>
+<span class="">* Lunes a Sábado</span>
 </div>
 <div class="grid grid-cols-2 gap-2">
 <div class="p-2.5 rounded-lg bg-surface-container-lowest border border-outline-variant/30 shadow-xs flex flex-col gap-1">
@@ -470,7 +471,7 @@
 </div>
 </section>
 <!-- Instalaciones y Ambiente Familiar -->
-<section class="px-margin-mobile py-space-sm flex flex-col gap-space-md">
+<section id="m-ambiente" class="px-margin-mobile py-space-sm flex flex-col gap-space-md">
 <div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm border border-outline-variant/40 flex flex-col gap-space-sm">
 <div class="flex items-center justify-between">
 <div>
@@ -481,12 +482,12 @@
 </div>
 <!-- Photo collage or primary photo -->
 <div class="grid grid-cols-2 gap-2 mt-1">
-<div class="rounded-lg overflow-hidden h-36 bg-cover bg-center shadow-inner relative" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBhJkmeQuW13p9Iua0rjNuC9v-iX6yHncMd6qSDEzVU_ZAorOb2jQYXe6f8P3RDiE17JbRZjgknug6LA-wMlJt8kQFCJeMDYA54Wf2pgokNaWAdI2J_Udny1xKe_OaQS1xK5eQbnc2g1r9_2BcvrCQ0vrgjmDqUSq9bCcAiIWkRm2zqdZ4dNrxL6FCUIALFTRfLWxzXB17LbhMmxuJozPvY8C0H4zSuQ_-3Hn4JYlBx94iQq_ASoAxBahzsg4HNl9nLFw')">
+<div class="rounded-lg overflow-hidden h-36 bg-cover bg-center shadow-inner relative" style="background-image: url('assets/img/img-08.jpg')">
 <div class="absolute bottom-1 left-1 bg-primary/90 text-secondary-fixed backdrop-blur-sm px-1.5 py-0.5 rounded text-[10px] font-bold border border-secondary/40">
         Comedor rústico
       </div>
 </div>
-<div class="rounded-lg overflow-hidden h-36 bg-cover bg-center shadow-inner relative" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBBnFW4DrEvfUZphallBY2lJDp-2l0jsl8vtAmvopQHDOUZSGqN5o_527A5rwASnXqQ6rs-TiHqyigf8nVIhKN9kg4Md1ucnoiSfdKHQGQwtRYy1AHvNhjhcHbLMtJfqQk2KRmD3WcM6NhyD_rvZiYZblariPREM2rufnFtfgmq95WSESvuyLfrnfozA94NbRwe8XQbh5JxHgSZJnUdUCSmPoAGgzFgcYJtKYfaXlSv9qUw4xl4S7qqRgblUzwufkMeQA')">
+<div class="rounded-lg overflow-hidden h-36 bg-cover bg-center shadow-inner relative" style="background-image: url('assets/img/img-09.jpg')">
 <div class="absolute bottom-1 left-1 bg-primary/90 text-secondary-fixed backdrop-blur-sm px-1.5 py-0.5 rounded text-[10px] font-bold border border-secondary/40">
         Servicio y mesas
       </div>
@@ -521,7 +522,7 @@
 <span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
 </div>
 <p class="font-body-md text-body-md text-on-surface italic">
-          “El mejor restaurante de la zona, deliciosa comida 100% casera, excelente servicio y atención.”
+          “Un gran restaurante de la zona, deliciosa comida casera, excelente servicio y atención.”
         </p>
 <span class="font-label-sm text-label-sm text-secondary font-bold mt-1">Comensal Verificado en Google</span>
 </div>
@@ -574,7 +575,7 @@
         Blvd. Adolfo López Mateos #95, Col. Aguaruto, Culiacán, Sin. (frente a Farmacon)
       </p>
 <!-- Map Snapshot Container -->
-<div class="w-full h-40 bg-cover bg-center rounded-lg shadow-inner relative flex items-end p-space-sm border border-outline-variant/40" data-location="Adolfo López Mateos 95, Aguaruto, Culiacán" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBXXFpbUoRGsnN1h8v43hWpv834oWMF9uGueRtFEGCCrgELJ0OKMTmzuDZ5zvS7q9f9X24a_09dswki-r_yVc7g3ZDk54lQCj9fyRaEFGm6WGhdZIKige8GH5KGuiGIcq8ADkE3pTNabzSTTj8q5mHKf4pM7zYdDIOzvK2UePIeCwalCrgKUNN-opsl2-DUnu5INy2cSJUW597XMxSEzIzUGC9S-aFQnWxHE-4erq9rNgtLlq-GR4fb')">
+<div class="w-full h-40 bg-cover bg-center rounded-lg shadow-inner relative flex items-end p-space-sm border border-outline-variant/40" data-location="Adolfo López Mateos 95, Aguaruto, Culiacán" style="background-image: url('assets/img/img-10.png')">
 <div class="bg-primary/95 text-secondary-fixed backdrop-blur-sm px-3 py-1 rounded-md font-label-sm text-label-sm shadow flex items-center gap-1 border border-secondary/40">
 <span class="material-symbols-outlined text-[16px] text-secondary">pin_drop</span>
 <span class="font-semibold text-white">Aguaruto Centro</span>
@@ -590,7 +591,7 @@
 <footer class="px-margin-mobile pt-space-md pb-space-xl bg-primary text-white flex flex-col gap-space-md rounded-t-2xl shadow-inner border-t-2 border-secondary/40">
 <div class="flex flex-col gap-space-xs text-center items-center">
 <div class="flex items-center gap-2">
-<div class="w-12 h-8 rounded border border-secondary/60 overflow-hidden shrink-0 bg-primary-container flex items-center justify-center p-0.5"><img alt="El Portal" class="w-full h-full object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1UOWQdBu0nMTziKYf9m_VTLNCOVcgdP9jLQ3ixqLSclWQpb6PJ5IYIcysyABMSNKpZDEgFgRc6eLMMlRCHvNtbc7Pk_Si7ADvZisg7z9aor5Wubbdj3s0GkMsmUV3NnYRTmGoowTGbPnY-gDWKQpBa4tEdufQiUFnjoIa5Jt84jLJbuw257emk9U_3t9d-tJKzYSxFQWBxWZosYir0vjnQIiuUnIgaBj56E8KedVuBoZ_9YGyXOQYrZUg"/></div>
+<div class="w-12 h-8 rounded border border-secondary/60 overflow-hidden shrink-0 bg-primary-container flex items-center justify-center p-0.5"><img alt="Logotipo de El Portal Comida Casera" class="w-full h-full object-contain" src="assets/img/img-01.jpg"/></div>
 <span class="font-headline-sm text-headline-sm text-white font-bold">El Portal Comida Casera</span>
 </div>
 <span class="font-label-sm text-label-sm text-secondary italic font-bold">"¡El hogar del sazón!"</span>
@@ -601,7 +602,7 @@
 </div>
 <!-- Direct Quick Actions -->
 <div class="flex flex-col gap-space-sm">
-<a class="w-full py-2.5 px-space-md bg-surface-container-lowest text-primary rounded-lg font-label-lg text-label-lg flex items-center justify-center gap-2 shadow-sm active:scale-[0.98] transition-transform border border-secondary/30 font-bold" href="tel:6672433244"><span class="material-symbols-outlined text-secondary text-[20px]">phone_in_talk</span><span class="">Ordene y Recoja: 667 243 3244</span></a>
+<a class="w-full py-2.5 px-space-md bg-surface-container-lowest text-primary rounded-lg font-label-lg text-label-lg flex items-center justify-center gap-2 shadow-sm active:scale-[0.98] transition-transform border border-secondary/30 font-bold" href="tel:+526672433244"><span class="material-symbols-outlined text-secondary text-[20px]">phone_in_talk</span><span class="">Ordene y Recoja: 667 243 3244</span></a>
 <a class="w-full py-3 px-space-md bg-secondary text-primary rounded-lg font-label-lg text-label-lg flex items-center justify-center gap-2 shadow-md active:scale-[0.98] transition-transform hover:bg-secondary-container font-bold" href="https://wa.me/526672433244?text=Hola%20El%20Portal,%20deseo%20hacer%20un%20pedido" target="_blank">
 <span class="material-symbols-outlined text-primary text-[20px]">chat</span>
 <span class="">Pedir por WhatsApp: 667 243 3244</span>
@@ -609,13 +610,13 @@
 </div>
 <div class="text-center pt-space-xs">
 <span class="font-label-sm text-label-sm text-primary-fixed-dim/80">
-        Hecho a mano con sazón sinaloense © El Portal Comida Casera
+        Hecho a mano con sazón sinaloense © 2026 El Portal Comida Casera
       </span>
 </div>
 </footer>
-</div></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface-container-lowest/95 backdrop-blur-xl border-t border-outline-variant/40 shadow-[0_-1px_12px_rgba(26,40,78,0.08)]" data-active-classes="text-primary font-bold"><div class="flex justify-around items-center h-16 px-gutter-mobile"><a aria-current="page" class="flex flex-col items-center justify-center min-w-[44px] min-h-[44px] transition-colors text-primary font-bold relative" data-path="menu" href="#"><span class="material-symbols-outlined text-[22px] text-secondary">restaurant_menu</span><span class="font-label-sm text-label-sm mt-0.5 text-primary">Menú</span><span class="w-6 h-0.5 bg-secondary rounded-full absolute bottom-1"></span></a><a class="flex flex-col items-center justify-center min-w-[44px] min-h-[44px] text-on-surface-variant hover:text-primary transition-colors" data-path="promociones" href="#"><span class="material-symbols-outlined text-[22px]">local_offer</span><span class="font-label-sm text-label-sm mt-0.5">Ofertas</span></a><a class="flex flex-col items-center justify-center min-w-[44px] min-h-[44px] text-on-surface-variant hover:text-primary transition-colors" data-path="pedidos" href="#"><span class="material-symbols-outlined text-[22px]">receipt_long</span><span class="font-label-sm text-label-sm mt-0.5">Pedidos</span></a><a class="flex flex-col items-center justify-center min-w-[44px] min-h-[44px] text-on-surface-variant hover:text-primary transition-colors" data-path="nosotros" href="#"><span class="material-symbols-outlined text-[22px]">storefront</span><span class="font-label-sm text-label-sm mt-0.5">Nosotros</span></a></div></nav>
+</div></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface-container-lowest/95 backdrop-blur-xl border-t border-outline-variant/40 shadow-[0_-1px_12px_rgba(26,40,78,0.08)]" data-active-classes="text-primary font-bold"><div class="flex justify-around items-center h-16 px-gutter-mobile"><a aria-current="page" class="flex flex-col items-center justify-center min-w-[44px] min-h-[44px] transition-colors text-primary font-bold relative" data-path="menu" href="#m-menu"><span class="material-symbols-outlined text-[22px] text-secondary">restaurant_menu</span><span class="font-label-sm text-label-sm mt-0.5 text-primary">Menú</span><span class="w-6 h-0.5 bg-secondary rounded-full absolute bottom-1"></span></a><a class="flex flex-col items-center justify-center min-w-[44px] min-h-[44px] text-on-surface-variant hover:text-primary transition-colors" data-path="promociones" href="https://wa.me/526672433244" target="_blank" rel="noopener noreferrer"><span class="material-symbols-outlined text-[22px]">local_offer</span><span class="font-label-sm text-label-sm mt-0.5">Ofertas</span></a><a class="flex flex-col items-center justify-center min-w-[44px] min-h-[44px] text-on-surface-variant hover:text-primary transition-colors" data-path="pedidos" href="https://wa.me/526672433244" target="_blank" rel="noopener noreferrer"><span class="material-symbols-outlined text-[22px]">receipt_long</span><span class="font-label-sm text-label-sm mt-0.5">Pedidos</span></a><a class="flex flex-col items-center justify-center min-w-[44px] min-h-[44px] text-on-surface-variant hover:text-primary transition-colors" data-path="nosotros" href="#m-ambiente"><span class="material-symbols-outlined text-[22px]">storefront</span><span class="font-label-sm text-label-sm mt-0.5">Nosotros</span></a></div></nav>
 </div>
-<div id="desk" class="bg-background font-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 z-50 bg-surface/95 backdrop-blur-md shadow-[0_1px_8px_rgba(21,34,63,0.08)] border-b border-outline-variant/40"><div class="h-20 max-w-[1240px] mx-auto px-gutter flex items-center justify-between gap-4"><div class="flex items-center gap-3 shrink-0"><div class="relative overflow-hidden w-14 h-11 rounded-lg border border-secondary/50 shadow-sm bg-primary shrink-0 flex items-center justify-center p-0.5"><img alt="El Portal Comida Casera Logo Oficial" class="w-full h-full object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1UOWQdBu0nMTziKYf9m_VTLNCOVcgdP9jLQ3ixqLSclWQpb6PJ5IYIcysyABMSNKpZDEgFgRc6eLMMlRCHvNtbc7Pk_Si7ADvZisg7z9aor5Wubbdj3s0GkMsmUV3NnYRTmGoowTGbPnY-gDWKQpBa4tEdufQiUFnjoIa5Jt84jLJbuw257emk9U_3t9d-tJKzYSxFQWBxWZosYir0vjnQIiuUnIgaBj56E8KedVuBoZ_9YGyXOQYrZUg"/></div><div class="flex flex-col"><div class="flex items-center gap-2"><span class="font-headline-sm text-headline-sm text-primary tracking-tight leading-none">El Portal</span><span class="px-2 py-0.5 rounded text-[11px] font-bold bg-primary text-secondary border border-secondary/40 hidden sm:inline-block leading-tight">¡El hogar del sazón!</span></div><span class="font-label-sm text-[12px] text-on-surface-variant font-medium mt-0.5">Comida Casera Sinaloense</span></div></div><nav class="hidden lg:flex items-center gap-5" data-active-classes="text-primary font-bold"><a aria-current="page" class="font-label-lg text-label-lg transition-colors text-primary font-bold border-b-2 border-secondary pb-0.5" data-path="inicio" href="#">Inicio</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-colors" data-path="menu" href="#menu-diario">Menú Diario</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-colors" data-path="platillos" href="#platillos">Platillos</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-colors" data-path="ambiente" href="#ambiente">El Restaurante</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-colors" data-path="opiniones" href="#opiniones">Opiniones</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-colors" data-path="ubicacion" href="#ubicacion">Ubicación</a></nav><div class="flex items-center gap-2.5 shrink-0"><a class="hidden sm:inline-flex items-center gap-1.5 px-3 py-2 rounded-lg text-on-surface hover:text-primary font-label-lg text-label-lg font-semibold transition-colors" href="tel:+526672433244"><span class="material-symbols-outlined text-[18px] text-secondary">call</span><span class="">667 243 3244</span></a><a class="inline-flex items-center gap-2 px-space-md py-2.5 rounded-lg bg-primary hover:bg-[#1f325d] text-on-primary transition-all duration-200 shadow-[0_2px_8px_rgba(21,34,63,0.3)] font-label-lg text-label-lg border border-secondary/30" href="https://wa.me/526672433244?text=Hola,%20me%20gustar%C3%ADa%20hacer%20un%20pedido%20en%20El%20Portal" rel="noopener noreferrer" target="_blank"><span class="material-symbols-outlined text-[18px] text-secondary">chat</span><span class="font-medium">Pedir por WhatsApp</span></a></div></div><div class="xl:hidden flex items-center justify-center py-1 bg-surface-container-low border-t border-outline-variant/30"><div class="flex items-center gap-2 px-space-sm py-0.5 rounded-full bg-surface-container"><span class="material-symbols-outlined text-secondary text-[14px]" style="font-variation-settings: 'FILL' 1;">star</span><span class="font-label-sm text-label-sm text-on-surface font-bold">4.6</span><span class="font-label-sm text-label-sm text-on-surface-variant font-normal">(136 reseñas en Google)</span><span class="text-outline-variant">•</span><span class="font-label-sm text-label-sm text-primary font-bold">Tel / WhatsApp: 667 243 3244</span></div></div></header><main class="w-full pt-20 bg-background"><div class="flex flex-col w-full">
+<div id="desk" class="bg-background font-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 z-50 bg-surface/95 backdrop-blur-md shadow-[0_1px_8px_rgba(21,34,63,0.08)] border-b border-outline-variant/40"><div class="h-20 max-w-[1240px] mx-auto px-gutter flex items-center justify-between gap-4"><div class="flex items-center gap-3 shrink-0"><div class="relative overflow-hidden w-14 h-11 rounded-lg border border-secondary/50 shadow-sm bg-primary shrink-0 flex items-center justify-center p-0.5"><img alt="Logotipo de El Portal Comida Casera" class="w-full h-full object-contain" src="assets/img/img-01.jpg"/></div><div class="flex flex-col"><div class="flex items-center gap-2"><span class="font-headline-sm text-headline-sm text-primary tracking-tight leading-none">El Portal</span><span class="px-2 py-0.5 rounded text-[11px] font-bold bg-primary text-secondary border border-secondary/40 hidden sm:inline-block leading-tight">¡El hogar del sazón!</span></div><span class="font-label-sm text-[12px] text-on-surface-variant font-medium mt-0.5">Comida Casera Sinaloense</span></div></div><nav class="hidden lg:flex items-center gap-5" data-active-classes="text-primary font-bold"><a aria-current="page" class="font-label-lg text-label-lg transition-colors text-primary font-bold border-b-2 border-secondary pb-0.5" data-path="inicio" href="#inicio">Inicio</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-colors" data-path="menu" href="#menu-diario">Menú Diario</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-colors" data-path="platillos" href="#platillos">Platillos</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-colors" data-path="ambiente" href="#ambiente">El Restaurante</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-colors" data-path="opiniones" href="#opiniones">Opiniones</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-colors" data-path="ubicacion" href="#ubicacion">Ubicación</a></nav><div class="flex items-center gap-2.5 shrink-0"><a class="hidden sm:inline-flex items-center gap-1.5 px-3 py-2 rounded-lg text-on-surface hover:text-primary font-label-lg text-label-lg font-semibold transition-colors" href="tel:+526672433244"><span class="material-symbols-outlined text-[18px] text-secondary">call</span><span class="">667 243 3244</span></a><a class="inline-flex items-center gap-2 px-space-md py-2.5 rounded-lg bg-primary hover:bg-[#1f325d] text-on-primary transition-all duration-200 shadow-[0_2px_8px_rgba(21,34,63,0.3)] font-label-lg text-label-lg border border-secondary/30" href="https://wa.me/526672433244?text=Hola,%20me%20gustar%C3%ADa%20hacer%20un%20pedido%20en%20El%20Portal" rel="noopener noreferrer" target="_blank"><span class="material-symbols-outlined text-[18px] text-secondary">chat</span><span class="font-medium">Pedir por WhatsApp</span></a></div></div><div class="xl:hidden flex items-center justify-center py-1 bg-surface-container-low border-t border-outline-variant/30"><div class="flex items-center gap-2 px-space-sm py-0.5 rounded-full bg-surface-container"><span class="material-symbols-outlined text-secondary text-[14px]" style="font-variation-settings: 'FILL' 1;">star</span><span class="font-label-sm text-label-sm text-on-surface font-bold">4.6</span><span class="font-label-sm text-label-sm text-on-surface-variant font-normal">(136 reseñas en Google)</span><span class="text-outline-variant">•</span><span class="font-label-sm text-label-sm text-primary font-bold">Tel / WhatsApp: 667 243 3244</span></div></div></header><main id="inicio" class="w-full pt-20 bg-background"><div class="flex flex-col w-full">
 <!-- HERO SECTION -->
 <section class="relative w-full overflow-hidden bg-surface-container-low py-space-xl lg:py-space-xl border-b border-outline-variant/30">
 <div class="max-w-[1240px] mx-auto px-gutter grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center">
@@ -686,7 +687,7 @@
 <!-- Visual Bento Accent with REAL Food Photo -->
 <div class="lg:col-span-5 relative">
 <div class="relative w-full aspect-[4/3] rounded-2xl overflow-hidden shadow-xl bg-surface-container border border-secondary/30 group">
-<img alt="Plato real de comida corrida de El Portal con guisado de res con papas, espagueti y frijoles con queso fresco" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB4OQkTxw6oHjL1DBhefgFt6C3XDrxM3gA5yTZv_Bq6-q200M7_D24GqI0qy4q4K7iW_kxcUjH-YKfcNMYDSut0WmujtMqmntwuRyWMZ1jmjNJSIkCBz1-RWR_alZAUqcFuyLr53yZrAc38Nt7WqC8MmY-bxfCGcclxDCF6H8mh4mcR7zSOkjrxT6TBDm-hkeFhylxDCZHABPoDEU3T9CVKQAewKHNQIXvIQOin_RmKfSpadg1biMw_VlQBnz2amhfMOA"/>
+<img alt="Plato real de comida corrida de El Portal con guisado de res con papas, espagueti y frijoles con queso fresco" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="assets/img/img-02.jpg"/>
 <div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent"></div>
 <!-- Cazuelas thumbnail badge -->
 <div class="absolute top-3.5 right-3.5 flex items-center gap-2 px-3 py-1.5 rounded-full bg-primary/95 text-white backdrop-blur-md shadow-md border border-secondary/40">
@@ -746,8 +747,8 @@ Cartel Oficial del Menú
 <div class="rounded-2xl bg-surface-container-lowest p-space-lg shadow-sm border border-outline-variant/50">
 <div class="flex items-center gap-2 mb-space-md pb-2 border-b border-outline-variant/30">
 <span class="material-symbols-outlined text-primary text-[22px]">calendar_today</span>
-<h3 class="font-headline-sm text-headline-sm text-primary">Disponible Todos los Días</h3>
-<span class="ml-auto text-xs font-semibold px-2.5 py-0.5 rounded-full bg-secondary/15 text-primary border border-secondary/30">Servicio continuo 7:00 a 17:00</span>
+<h3 class="font-headline-sm text-headline-sm text-primary">Disponible de Lunes a Sábado</h3>
+<span class="ml-auto text-xs font-semibold px-2.5 py-0.5 rounded-full bg-secondary/15 text-primary border border-secondary/30">Lun–Vie 7:00 a 17:00 · Sáb 7:00 a 15:00</span>
 </div>
 <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3">
 <div class="flex items-center gap-2 p-2.5 rounded-lg bg-surface-container-low hover:bg-white transition-colors">
@@ -919,7 +920,7 @@ Cartel Oficial del Menú
 <!-- Dish Card 1: Guisado de Res -->
 <div class="flex flex-col rounded-xl overflow-hidden bg-surface-container-lowest shadow-sm hover:shadow-md transition-shadow border border-outline-variant/40 hover:border-secondary/50">
 <div class="relative w-full h-48 overflow-hidden bg-surface-container">
-<img alt="Guisado de Res con papas, espagueti y frijoles con queso fresco" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDVZzTm2CjmnDsfuIhQHRkcEDHXqqVOD2pg5xJBIEPJtwkpcQJnM-p3Ji9D4yVrwzXI5Vn-382ZVC2vLipupJ8zTjdeemVyQBBIbpqDmaV5ECBgPVq1ileek6cCMIwayXJmPdwOxsiq_QyAhcF8xQBeFobBQNUGlC8UCprreNlAG74c92zFDHWwZlghn2SP_eApFGZS6PIlFhfcXVlOHFwB4SNX9w-8qom1ogUGU44BqWJWp7PdWUFdYantqMFPI3-pzg"/>
+<img alt="Guisado de Res con papas, espagueti y frijoles con queso fresco" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" src="assets/img/img-02.jpg"/>
 <span class="absolute top-2.5 left-2.5 px-2 py-0.5 rounded-full bg-primary/95 text-secondary border border-secondary/40 font-label-sm text-[11px] font-bold shadow-sm">
               Favorito de casa
             </span>
@@ -943,7 +944,7 @@ Cartel Oficial del Menú
 <!-- Dish Card 2: Gorditas y Sopes -->
 <div class="flex flex-col rounded-xl overflow-hidden bg-surface-container-lowest shadow-sm hover:shadow-md transition-shadow border border-outline-variant/40 hover:border-secondary/50">
 <div class="relative w-full h-48 overflow-hidden bg-surface-container">
-<img alt="Gorditas y sopes artesanales pellizcados con frijoles refritos y queso gratinado" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA_OA1_ou3IYBEVn5_9hbN0jk1mI6PvYHS34tdP5v1wWLbWFxz3FY0KmJ3UHfygAtPr2bNYcEfN6ewx1cecpdnVcB6CgxS3T6-bbdi48im_Yag0DjtYqbULi2DQ8vERvD4HvGL7YQxI4Te0EHD7cRV09kzDdZMOIcT3x6dJ6mWTMfBD7r1sJu36VQuBL_Jco3Eyf6ECO0l89Vnx5agZgbiebsi48c6MsBPRc7THjOez7KM72xkY4H4yo9YzyKT9raYB4g"/>
+<img alt="Gorditas y sopes artesanales pellizcados con frijoles refritos y queso gratinado" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" src="assets/img/img-04.jpg"/>
 <span class="absolute top-2.5 left-2.5 px-2 py-0.5 rounded-full bg-primary/95 text-secondary border border-secondary/40 font-label-sm text-[11px] font-bold shadow-sm">
               Hecho a mano
             </span>
@@ -967,7 +968,7 @@ Cartel Oficial del Menú
 <!-- Dish Card 3: Plátanos Machos Fritos -->
 <div class="flex flex-col rounded-xl overflow-hidden bg-surface-container-lowest shadow-sm hover:shadow-md transition-shadow border border-outline-variant/40 hover:border-secondary/50">
 <div class="relative w-full h-48 overflow-hidden bg-surface-container">
-<img alt="Plátanos machos fritos y doraditos como guarnición tradicional sinaloense" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBphCuj2nPAAbPd9yWmnX-aHI11UhA-Ja-EgLHh1QCkIUbhb5lM7KospyMW8jNsryzV3Db1B72r_ENmQ_w20tCwWarGxlWgk60GGpfA3SafPNqXqAhvWzUuhV-04Fuai5oo33ZYn2m7jtXCTZL9_0QlLE6kEfYe9kBiDPCw7TYPfnYpxxBqzgkapcu0wBhSdOAec2YQ_C4GhMO1V1f1ubN7qIm90_t_PlaCE69nmAoqopfO219ogpVWj7DM_jnErWKOwg"/>
+<img alt="Plátanos machos fritos y doraditos como guarnición tradicional sinaloense" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" src="assets/img/img-05.jpg"/>
 <span class="absolute top-2.5 left-2.5 px-2 py-0.5 rounded-full bg-primary/95 text-secondary border border-secondary/40 font-label-sm text-[11px] font-bold shadow-sm">
               Guarnición clásica
             </span>
@@ -991,7 +992,7 @@ Cartel Oficial del Menú
 <!-- Dish Card 4: Huevos con Jamón -->
 <div class="flex flex-col rounded-xl overflow-hidden bg-surface-container-lowest shadow-sm hover:shadow-md transition-shadow border border-outline-variant/40 hover:border-secondary/50">
 <div class="relative w-full h-48 overflow-hidden bg-surface-container">
-<img alt="Desayuno casero de huevos revueltos con jamón, frijoles y rebanada de queso fresco" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAlb4L_zo1taAOShN6nHvggMUBYlYoLbDgEyeinCp_tNjKo4t4DGr2bvZmcS3A9e3yO-WqSfp9MbWpx0KJkd9bj_hN3RRx97b_o2mM2H1_rkD5HZspNo36W0-pkrim-tAQTbbChhQTy2Xn1l6JhQWyKD5dq0qOsAuuKfXXv6kwTX-WZ7bCKb4hu6AwwIKUUwIw3QcUxpPupV34nlopGqTowL-RO7KuQnLKebNwRJ3Jl4YP_BwrSnqLyim_KmJ2_gT8gFg"/>
+<img alt="Desayuno casero de huevos revueltos con jamón, frijoles y rebanada de queso fresco" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" src="assets/img/img-06.jpg"/>
 <span class="absolute top-2.5 left-2.5 px-2 py-0.5 rounded-full bg-primary/95 text-secondary border border-secondary/40 font-label-sm text-[11px] font-bold shadow-sm">
               Desde las 7:00 AM
             </span>
@@ -1015,7 +1016,7 @@ Cartel Oficial del Menú
 <!-- Dish Card 5: Barra de Cazuelas Calientes -->
 <div class="flex flex-col rounded-xl overflow-hidden bg-surface-container-lowest shadow-sm hover:shadow-md transition-shadow border border-outline-variant/40 hover:border-secondary/50">
 <div class="relative w-full h-48 overflow-hidden bg-surface-container">
-<img alt="Barra de cazuelas calientes con bistec ranchero, marlin, plátanos y salsas caseras" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD4tAnFVgKxr69E6EZev1sbQV1eZ3lbjhwGnJWJp2wf74awm7rZVnr8tt7WpDVYmbGn3b4_X7Fb10DQE1pPL7ttZFKrI4jsXHpoNqeAjcGDlvIBW7IDI-46Jxzsva3JAvBdRiBvyJT8bfJkWGzsU-hbY149nh7_Ald39GV5DifF6WGOC68gbnaVvN39HnmqCVz55HsTHCC4fEr7VGt9LvRQWZlBuO-cYLpZ-4TxANKbi2TNSTPIrJjZOgX922g__hiukA"/>
+<img alt="Barra de cazuelas calientes con bistec ranchero, marlin, plátanos y salsas caseras" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" src="assets/img/img-03.jpg"/>
 <span class="absolute top-2.5 left-2.5 px-2 py-0.5 rounded-full bg-primary/95 text-secondary border border-secondary/40 font-label-sm text-[11px] font-bold shadow-sm">
               Barra Caliente
             </span>
@@ -1068,10 +1069,10 @@ Cartel Oficial del Menú
 <!-- Photo 1 & 2 -->
 <div class="lg:col-span-6 grid grid-cols-2 gap-3">
 <div class="rounded-2xl overflow-hidden shadow-md border border-outline-variant/40 bg-surface-container aspect-[3/4]">
-<img alt="Mesa de comedor de El Portal con salsas, azulejos artesanales y cuadros mexicanos" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCUVqLVbK1S0Sk-9umICEx5WRNXAnUXZLTx6TVGVvUzi0MQT_4C2oZGF_3eNjJp5zPTJ3ygljaYfdPiUHgxNMZnXfTqbg8jCic4JQqSU5Lme76F6NxqBAgDSOlCPLjvA7KFlRRr3tiBwep4ILgYnNd9ZSrV6fGDYR3EdTYhf5B7zvfdSkr6kzF_IXMUwdyOgd4gNxHmtGSttY1AndymDJJmdrgDAQA4soXOrhjWm6GJq77ZxGDZfCc7nYLG3qLHzuPn0Q"/>
+<img alt="Mesa de comedor de El Portal con salsas, azulejos artesanales y cuadros mexicanos" class="w-full h-full object-cover" src="assets/img/img-08.jpg"/>
 </div>
 <div class="rounded-2xl overflow-hidden shadow-md border border-outline-variant/40 bg-surface-container aspect-[3/4] mt-6">
-<img alt="Interior de El Portal con techos de vigas de madera, barra de alimentos y mesas de comensales" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDU8J-dH-V7FSL0x_1gc4rmmdwu7OGxhcjJMepHV0yizhHjkoZfSxTcZGjgUOeQo3nh4UdM52i7Ilw8z9JTeL7eO6-iUc1gf7rpISqCgbBg_u-VWtx6dxpVE-NmIAu6dbBAETx4o-MLWgL7M1UyZOhtqgqSOW3OTMrwkMKzvR9ZnaoaSsbZEkU0ICoJqeWSfej3gze2PyT-7c18wC1MC2uzU_E6wNdCAKJBufcnGCImEDqQbR9Zw6xzhYavBrVxqycTGA"/>
+<img alt="Interior de El Portal con techos de vigas de madera, barra de alimentos y mesas de comensales" class="w-full h-full object-cover" src="assets/img/img-09.jpg"/>
 </div>
 </div>
 <!-- Info Column -->
@@ -1147,7 +1148,7 @@ Cartel Oficial del Menú
 </div>
 <span class="font-label-sm text-label-sm text-on-surface-variant font-semibold">5 de 5 estrellas</span>
 </div>
-<p class="font-headline-sm text-headline-sm text-primary italic leading-relaxed">“El mejor restaurante de la zona, deliciosa comida 100% casera, excelente servicio y atención.”</p>
+<p class="font-headline-sm text-headline-sm text-primary italic leading-relaxed">“Un gran restaurante de la zona, deliciosa comida casera, excelente servicio y atención.”</p>
 </div>
 <div class="pt-space-sm border-t border-outline-variant/30 flex items-center gap-3">
 <div class="w-10 h-10 rounded-full bg-primary text-secondary flex items-center justify-center font-bold font-title-md border border-secondary/40">
@@ -1243,7 +1244,7 @@ Cartel Oficial del Menú
 <!-- Real Cartel / Location Reference Banner -->
 <div class="w-full rounded-xl overflow-hidden border border-outline-variant/60 bg-surface-container relative">
 <div class="relative w-full h-52 bg-slate-100 overflow-hidden">
-<img alt="Mapa de Google Maps de El Portal Comida Casera en Aguaruto" class="w-full h-full object-cover object-center" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDrvDB5VV0JUzjdwE7Nv1RBd5_9OZlD09t1H780M5z2X39_xA4B3uIcZwUA5E8_qucxaaC8sbtFjBNuZ0FCKBCqitWRUqinDibt9FSrLTlPNiqMs4u3V9bAmKm-nKRryYXFRQl-2Znl3-8QqV3twXD0PkTq0EOdyTT7vVeeiIgaZnze1lXLyFers39bUkJZUC4uhM6D53ZX8zN2ALxSqXC2kgZHZHa7fyREikAMNZZ6gG0w66yWkWxg"/>
+<img alt="Mapa de Google Maps de El Portal Comida Casera en Aguaruto" class="w-full h-full object-cover object-center" src="assets/img/img-11.jpg"/>
 <div class="absolute inset-0 bg-gradient-to-t from-primary/85 via-primary/30 to-transparent"></div>
 <div class="absolute bottom-3 left-4 right-4 flex items-center justify-between text-white">
 <div>
@@ -1277,7 +1278,7 @@ Cartel Oficial del Menú
 <div class="md:col-span-5 space-y-space-sm">
 <div class="flex items-center gap-3">
 <div class="w-14 h-11 rounded-lg border border-secondary/60 overflow-hidden bg-primary shrink-0 flex items-center justify-center p-0.5 shadow-sm">
-<img alt="El Portal Logo" class="w-full h-full object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1UOWQdBu0nMTziKYf9m_VTLNCOVcgdP9jLQ3ixqLSclWQpb6PJ5IYIcysyABMSNKpZDEgFgRc6eLMMlRCHvNtbc7Pk_Si7ADvZisg7z9aor5Wubbdj3s0GkMsmUV3NnYRTmGoowTGbPnY-gDWKQpBa4tEdufQiUFnjoIa5Jt84jLJbuw257emk9U_3t9d-tJKzYSxFQWBxWZosYir0vjnQIiuUnIgaBj56E8KedVuBoZ_9YGyXOQYrZUg"/>
+<img alt="Logotipo de El Portal Comida Casera" class="w-full h-full object-contain" src="assets/img/img-01.jpg"/>
 </div>
 <div>
 <h4 class="font-headline-sm text-headline-sm text-white">El Portal Comida Casera</h4>
@@ -1330,11 +1331,11 @@ Cartel Oficial del Menú
 </div>
 <!-- Bottom Bar -->
 <div class="pt-space-md flex flex-col sm:flex-row items-center justify-between gap-space-sm text-white/70 font-body-sm text-body-sm border-t border-white/10">
-<p class="">© 2024 El Portal Comida Casera — ¡El hogar del sazón! Todos los derechos reservados.</p>
+<p class="">© 2026 El Portal Comida Casera — ¡El hogar del sazón! Todos los derechos reservados.</p>
 <p class="text-secondary font-medium">Aguaruto, Culiacán, Sinaloa, México</p>
 </div>
 </div>
 </section>
-</div></main><footer class="w-full bg-[#0d162a] border-t border-secondary/20 py-space-md text-white/70"><div class="max-w-[1240px] mx-auto px-gutter flex flex-col md:flex-row items-center justify-between gap-space-md"><div class="flex items-center gap-3"><div class="w-9 h-7 rounded border border-secondary/50 overflow-hidden bg-primary flex items-center justify-center p-0.5"><img alt="El Portal Mini Logo" class="w-full h-full object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1UOWQdBu0nMTziKYf9m_VTLNCOVcgdP9jLQ3ixqLSclWQpb6PJ5IYIcysyABMSNKpZDEgFgRc6eLMMlRCHvNtbc7Pk_Si7ADvZisg7z9aor5Wubbdj3s0GkMsmUV3NnYRTmGoowTGbPnY-gDWKQpBa4tEdufQiUFnjoIa5Jt84jLJbuw257emk9U_3t9d-tJKzYSxFQWBxWZosYir0vjnQIiuUnIgaBj56E8KedVuBoZ_9YGyXOQYrZUg"/></div><span class="font-headline-sm text-base text-white font-bold">El Portal Comida Casera</span></div><div class="flex flex-wrap items-center justify-center gap-space-lg"><a class="font-body-sm text-body-sm text-white/75 hover:text-secondary transition-colors" data-path="inicio" href="#">Inicio</a><a class="font-body-sm text-body-sm text-white/75 hover:text-secondary transition-colors" data-path="menu" href="#menu-diario">Menú Diario</a><a class="font-body-sm text-body-sm text-white/75 hover:text-secondary transition-colors" data-path="platillos" href="#platillos">Platillos</a><a class="font-body-sm text-body-sm text-white/75 hover:text-secondary transition-colors" data-path="ambiente" href="#ambiente">El Restaurante</a><a class="font-body-sm text-body-sm text-white/75 hover:text-secondary transition-colors" data-path="opiniones" href="#opiniones">Opiniones</a><a class="font-body-sm text-body-sm text-white/75 hover:text-secondary transition-colors" data-path="ubicacion" href="#ubicacion">Ubicación</a></div><p class="font-body-sm text-body-sm text-white/75 text-center md:text-right">Ordene y recoja: <strong class="text-secondary font-semibold">667 243 3244</strong></p></div></footer>
+</div></main><footer class="w-full bg-[#0d162a] border-t border-secondary/20 py-space-md text-white/70"><div class="max-w-[1240px] mx-auto px-gutter flex flex-col md:flex-row items-center justify-between gap-space-md"><div class="flex items-center gap-3"><div class="w-9 h-7 rounded border border-secondary/50 overflow-hidden bg-primary flex items-center justify-center p-0.5"><img alt="Logotipo pequeño de El Portal Comida Casera" class="w-full h-full object-contain" src="assets/img/img-01.jpg"/></div><span class="font-headline-sm text-base text-white font-bold">El Portal Comida Casera</span></div><div class="flex flex-wrap items-center justify-center gap-space-lg"><a class="font-body-sm text-body-sm text-white/75 hover:text-secondary transition-colors" data-path="inicio" href="#inicio">Inicio</a><a class="font-body-sm text-body-sm text-white/75 hover:text-secondary transition-colors" data-path="menu" href="#menu-diario">Menú Diario</a><a class="font-body-sm text-body-sm text-white/75 hover:text-secondary transition-colors" data-path="platillos" href="#platillos">Platillos</a><a class="font-body-sm text-body-sm text-white/75 hover:text-secondary transition-colors" data-path="ambiente" href="#ambiente">El Restaurante</a><a class="font-body-sm text-body-sm text-white/75 hover:text-secondary transition-colors" data-path="opiniones" href="#opiniones">Opiniones</a><a class="font-body-sm text-body-sm text-white/75 hover:text-secondary transition-colors" data-path="ubicacion" href="#ubicacion">Ubicación</a></div><p class="font-body-sm text-body-sm text-white/75 text-center md:text-right">Ordene y recoja: <strong class="text-secondary font-semibold">667 243 3244</strong></p></div></footer>
 </div>
 </body></html>
